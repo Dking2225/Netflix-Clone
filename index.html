@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/99cc9558ab.js" crossorigin="anonymous"></script>
+    
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Netflix | Home</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-center">
+            <div class="nav-header">
+                <img src="./images/netflix.png" class = "logo" alt="logo">
+            </div>
+            <div class="nav-browse">
+                <a href="#">Browse</a>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+                
+
+            <!-- links -->
+            <ul class="links">
+                <li>
+                <a href="#">home</a>
+                </li>
+                <li>
+                <a href="#">tV shows</a>
+                </li>
+                <li>
+                <a href="#">movies</a>
+                </li>
+                <li>
+                <a href="#">new & popular</a>
+                </li>
+                <li>
+                <a href="#">my list</a>
+                </li>
+                <li>
+                <a href="#">browse by language</a>
+                </li>
+            </ul>
+
+            <!-- drop down menus mobile -->
+            <div class="link-menu-container hide-tool">
+                <ul class="link-menu">
+                    <li>
+                    <a href="#">home</a>
+                    </li>
+                    <li>
+                    <a href="#">tV shows</a>
+                    </li>
+                    <li>
+                    <a href="#">movies</a>
+                    </li>
+                    <li>
+                    <a href="#">new & popular</a>
+                    </li>
+                    <li>
+                    <a href="#">my list</a>
+                    </li>
+                    <li>
+                    <a href="#">browse by language</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="icons">
+                <li class="show-search-bar hide-tool">
+                    <div class="search-bar">
+                        <i class="fa-solid fa-magnifying-glass search2"></i>
+                    </div>
+                </li>
+                
+                <li>
+                    <i class="fa-solid fa-magnifying-glass search"></i>
+                </li>
+                
+                <li class="none">
+                    <a href="#">kids</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-bell"></i>
+                </li>
+                <li>
+                    <div class = "profile">
+                    </div>
+                </li>
+                <li class="none">
+                    <i class="fa-solid fa-caret-down"></i>
+                </li>
+            </ul>
+            <!-- drop down notifications -->
+            <ul class="notifications-menu hide-tool">
+                <li>
+                    <a href="#">The weekend away</a>
+                    </li>
+                    <li>
+                    <a href="#">Boeing documentary</a>
+                    </li>
+                    <li>
+                    <a href="#">superman</a>
+                    </li>
+                    <li>
+                    <a href="#">marvel movies</a>
+                    </li>
+                    <li>
+                    <a href="#">Black widow</a>
+                    </li>
+            </ul>
+            <!-- drop down account -->
+            <ul class="account-menu hide-tool">
+                <li>
+                    <a href="#">kids</a>
+                    </li>
+                    <li>
+                    <a href="#">Manage profile</a>
+                    </li>
+                    <li>
+                    <a href="#">Account</a>
+                    </li>
+                    <li>
+                    <a href="#">help center</a>
+                    </li>
+                    <li>
+                    <a href="#">Sign out of netflix</a>
+                    </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="billboard">
+        
+        <div class="billboard-container">
+            <!-- when not playing-->
+            <div class="billboard-thumbnail hide-tool">
+                <img src="images/Jumanji_thumbnail.png" alt="">
+            </div>
+            <div class="billboard-title">
+                <img src="./images/Jumanji_title.png" alt="">
+            </div>
+            <div class="billboard-info">
+                <p> lorem lol</p>     
+            </div>
+            <div class="billboard-play-button">
+                <i class="fa-solid fa-play"></i>
+                <a href="#">play</a>
+            </div>
+            <div class="billboard-more-info">
+                <div class="info-container">
+                    <i class="fa-solid fa-info"></i>
+                </div>
+                <a href="#">More Info</a>  
+            </div>
+            <div class="billboard-playback hide-tool">
+                <i class="fa-solid fa-arrow-rotate-right"></i>
+            </div>
+            <div class="billboard-rating">
+                <p>PG-13</p>
+            </div>
+        
+            <!--when playing -->
+            <div class="billboard-video">
+                <video autoplay muted  class="video-playing">
+                    <!-- <source src="./videos/video.mp4" type="video/mp4" /> -->
+                </video>
+            </div>
+            <div class="billboard-title-playing"></div>
+            <!-- <div class="billboard-more-info hide-tool"></div>
+            <div class="billboard-play-button-playing"></div> -->
+            <div class="billboard-sound hide-tool">
+                <i class="fa-solid fa-volume-high "></i>
+            </div>
+            <div class="billboard-mute hide-tool">
+                <i class="fa-solid fa-volume-xmark"></i>
+            </div>
+            <!-- <div class="billboard-rating"></div> -->
+        </div>
+    
+    </section>
+
+    <div class="more-info-overlay hide-tool"></div>
+    <section class="more-info-container hide-tool">
+        <div class="more-info-video">
+            <video autoplay  muted  class="more-info-video-playing">
+            </video>
+            <div class="more-info-video-exit">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="more-info-video-title">
+                <img src="./images/Wu-assassin-title.png" alt="">
+            </div>
+            <div class="more-info-video-play">
+                <i class="fa-solid fa-play"></i>
+                <a href="#">Play</a>
+            </div>
+            <div class="more-info-video-mylist">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="more-info-video-mute">
+                <i class="fa-solid fa-volume-xmark"></i>
+            </div>
+        </div>
+        <div class="more-info-content">
+            <div class="more-info-content-match">
+                <p class = "match-text">98% Match</p>
+            </div>
+            <div class="more-info-content-year"><p class="content-text">2018</p></div>
+            <div class="more-info-content-filmtype"><p class="content-text">Movie</p></div>
+            <div class="more-info-content-duration"> <p class="content-text" >1hr 30 mins</p> </div>
+        </div>
+        <div class="more-info-about">
+            <p class = "about-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, maiores excepturi? Modi adipisci cupiditate ullam iure voluptatem at, officiis dolorum fugiat expedita quas voluptates fuga, doloribus exercitationem et laboriosam fugit.
+            </p>
+        </div>
+        <div class="more-info-prop">
+            <div class="more-info-prop-cast spacing-bottom">
+                <p class="prop-text1">Cast:</p>
+                <p class="prop-text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quasi!</p>
+            </div>
+            <div class="more-info-prop-genre spacing-bottom">
+                <p class="prop-text1">Genres: </p>
+                <p class="prop-text2">Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+            <div class="more-info-prop-showtype">
+                <p class="prop-text1">This show is</p>
+                <p class="prop-text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, at!</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="movie-container">
+        <div class="movie-category">
+            <!-- <p>Popular on netflix</p>
+            <div class="category-title category-selection">
+                <img src="./images/WuAssassin_thumbnail.jpg" alt="" class="image-category" >
+                <img src="./images/WuAssassin_thumbnail.jpg" alt="" class="image-category" >
+                <img src="./images/WuAssassin_thumbnail.jpg" alt="" class="image-category" >
+                <img src="./images/WuAssassin_thumbnail.jpg" alt="" class="image-category" >
+            </div> -->
+            <!-- prev  -->
+            <!-- <button type = "button" class = "prev"> 
+                <i class="fa-solid fa-chevron-left"></i>
+            </button> -->
+            <!-- next  -->
+            <!-- <button type = "button" class="next">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button> -->
+        </div>
+        
+        
+    </section>
+
+    <section class="movie-container-hover hide-tool">
+        <div class="movie-hover-video">
+            <video autoplay class="movie-video" >
+                <source src="./videos/video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="movie-hover-play">
+            <i class="fa-solid fa-play"></i>
+        </div>
+        <div class="movie-hover-addList">
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="movie-hover-removeList">
+            <i class="fa-solid fa-minus"></i>
+        </div>
+        <div class="movie-hover-info">
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="movie-hover-stat1">
+            <p class="match-style">98% Match</p>
+            <p class="rating-style">PG-13</p>
+            <p class="duration-style">1hr 37min</p>
+        </div>
+        <div class="movie-hover-stat2">
+            <p>Dark |</p>
+            <p> Suspenseful |</p>
+            <p> Fantasy</p>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="social-icons-container">
+            <div class="facebook-icon ">
+                <i class="fa-brands fa-facebook-f icon-style"></i>
+            </div>
+            <div class="inst-icon ">
+                <i class="fa-brands fa-instagram icon-style"></i>
+            </div>
+            <div class="twitter-icon ">
+                <i class="fa-brands fa-twitter icon-style"></i>
+            </div>
+            <div class="youtube-icon ">
+                <i class="fa-brands fa-youtube icon-style"></i>
+            </div>
+        </div>
+        <div class="information-container">
+            <div class="info-box1">
+                <p>Audio description</p>
+                <p>Audio description</p>
+                <p>Audio description</p>
+            </div>
+            <div class="info-box2">
+                <p>Audio description</p>
+                <p>Audio description</p>
+                <p>Audio description</p>
+            </div>
+            <div class="info-box3">
+                <p>Audio description</p>
+                <p>Audio description</p>
+                <p>Audio description</p>
+            </div>
+
+            <div class="info-box4">
+                <p>Audio description</p>
+                <p>Audio description</p>
+                <p>Audio description</p>
+            </div>
+        </div>
+        <div class="service-code-container">
+            <p>Service Code</p></div>
+        <div class="copyright-container">
+            <p>1997-2022 Netflix Inc</p>
+        </div>
+    </footer>
+    
+
+    
+
+<!-- javascript -->
+<script type = "module" src="index.js"></script>
+</body>
+</html>

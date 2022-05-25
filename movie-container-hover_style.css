@@ -1,0 +1,124 @@
+.movie-container-hover{
+    position: absolute; 
+    top: 1000px;
+    left: 24px;
+    z-index: 2;
+    background: #222222;
+    border-radius: 10px;
+   
+}
+.movie-hover-video{
+    margin-bottom: 16px;
+}
+.movie-hover-video video{
+    height: auto;
+    width: 375px;
+    border-radius: 10px 10px 0px 0px;
+}
+.movie-hover-play{
+    border-style: solid;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.movie-hover-play i{
+    position: relative;
+    left: 10px;
+    top: 3px;
+    font-size: 2em;
+    color: white;
+}
+
+.movie-hover-addList{
+    border-style: solid;
+    color: white;
+    position: relative;
+    top: -45px;
+    left: 59px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.movie-hover-addList i{
+    font-size: 2em;
+    position: relative;
+    left: 5px;
+    top: 2px;
+}
+.movie-hover-removeList{
+    border-style: solid;
+    color: white;
+    position: relative;
+    top: -90px;
+    left: 59px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.movie-hover-removeList i{
+    font-size: 2em;
+    position: relative;
+    left: 5px;
+    top: 2px;
+}
+.movie-hover-info{
+    border-style: solid;
+    color: white;
+    position: relative;
+    left: 311px;
+    top: -133px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.movie-hover-info i{
+    font-size: 2em;
+    position: relative;
+    left: 5px;
+    top: 2px;
+}
+
+.movie-hover-stat1{
+    display: flex;
+    position: absolute;
+    top: 293px;
+    left: 5px;
+}
+
+
+.movie-hover-stat1 >*{
+    margin-right: 10px;
+}
+
+.match-style{
+    font-size: 1.3em;
+    color: green;
+}
+.rating-style{
+    border-style: solid;
+    /* border-color: grey; */
+    font-size: 1.3em;
+    color: white;
+}
+.duration-style{
+    font-size: 1.3em;
+    color: white;
+}
+
+.movie-hover-stat2{
+    display: flex;
+    position: absolute;
+    top: 343px;
+    left: 5px;
+    /* border-style: solid;
+    color: white; */
+}
+
+.movie-hover-stat2 p{
+    font-size: 1.3em;
+    color: white;
+}

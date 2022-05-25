@@ -1,0 +1,32 @@
+/* fonts  */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap');
+
+@import url(nav_style.css);
+@import url(billboard_style.css);
+@import url(more-info-pop-up_style.css);
+@import url(footer_style.css);
+@import url(movie-container_style.css);
+@import url(movie-container-hover_style.css);
+/* variables */
+:root{
+    --clr-primary-1: #FFFFFF;
+    --clr-primary-2: #E5E5E5;
+    --ff-primary: 'IBM Plex Sans', sans-serif;
+
+}
+
+
+body{
+    overflow-x: hidden
+}
+
+
+
+      
+
+      
+
+    
+
+
