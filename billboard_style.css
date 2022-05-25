@@ -1,5 +1,6 @@
 .billboard{
-    position: relative
+    position: relative;
+    z-index: 0;
 }
 .billboard-container{
     height: 960px;

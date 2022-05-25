@@ -20,143 +20,7 @@ const movies = [
     video: "./videos/Jumanji.mp4",
     duration: "2hr 30 min",
     desc: `When Spencer goes missing, Martha, Bethany and Fridge realize they must go back into jumanji to find him- but something goes wrong.`,
-  },
-  {
-    id: 1,
-    title: "Wu Assassins",
-    rating: "TV-MA",
-    category: "action",
-    img_title: "./images/Wu-assassin-title.png",
-    thumbnails: "./images/WuAssassin_thumbnail.jpg",
-    video: "./videos/Wu_assassin.mp4",
-    duration: "1hr 30 min",
-    desc: `A warrior chosen as the latest and last Wu Assassin must search for the powers of an ancient triad and restore balance in San Francisco's Chinatown.`,
-  },
-  {
-    id: 2,
-    title: "Jumanji",
-    rating: "PG",
-    category: "action",
-    img_title: "./images/Jumanji_title.png",
-    thumbnails: "./images/Jumanji_thumbnail.png",
-    video: "./videos/Jumanji.mp4",
-    duration: "2hr 30 min",
-    desc: `When Spencer goes missing, Martha, Bethany and Fridge realize they must go back into jumanji to find him- but something goes wrong.`,
-  },
-  {
-    id: 1,
-    title: "Wu Assassins",
-    rating: "TV-MA",
-    category: "action",
-    img_title: "./images/Wu-assassin-title.png",
-    thumbnails: "./images/WuAssassin_thumbnail.jpg",
-    video: "./videos/Wu_assassin.mp4",
-    duration: "1hr 30 min",
-    desc: `A warrior chosen as the latest and last Wu Assassin must search for the powers of an ancient triad and restore balance in San Francisco's Chinatown.`,
-  },
-  {
-    id: 2,
-    title: "Jumanji",
-    rating: "PG",
-    category: "action",
-    img_title: "./images/Jumanji_title.png",
-    thumbnails: "./images/Jumanji_thumbnail.png",
-    video: "./videos/Jumanji.mp4",
-    duration: "2hr 30 min",
-    desc: `When Spencer goes missing, Martha, Bethany and Fridge realize they must go back into jumanji to find him- but something goes wrong.`,
-  },
-  {
-    id: 3,
-    title: "Wu Assassins",
-    rating: "TV-MA",
-    category: "thriller",
-    img_title: "./images/Wu-assassin-title.png",
-    thumbnails: "./images/WuAssassin_thumbnail.jpg",
-    video: "./videos/Wu_assassin.mp4",
-    duration: "1hr 30 min",
-    desc: `A warrior chosen as the latest and last Wu Assassin must search for the powers of an ancient triad and restore balance in San Francisco's Chinatown.`,
-  },
-  {
-    id: 4,
-    title: "Jumanji",
-    rating: "PG",
-    category: "action",
-    img_title: "./images/Jumanji_title.png",
-    thumbnails: "./images/Jumanji_thumbnail.png",
-    video: "./videos/Jumanji.mp4",
-    duration: "2hr 30 min",
-    desc: `When Spencer goes missing, Martha, Bethany and Fridge realize they must go back into jumanji to find him- but something goes wrong.`,
-  },
-  
-  {
-    id: 13,
-    title: "Jumanji",
-    rating: "PG",
-    category: "adventure",
-    img_title: "./images/Jumanji_title.png",
-    thumbnails: "./images/Jumanji_thumbnail.png",
-    video: "./videos/Jumanji.mp4",
-    duration: "1hr 30 min",
-    desc: `When Spencer goes missing, Martha, Bethany and Fridge realize they must go back into jumanji to find him- but something goes wrong.`,
-  },
-  {
-    id: 14,
-    title: "Jumanji",
-    rating: "PG",
-    category: "adventure",
-    img_title: "./images/Jumanji_title.png",
-    thumbnails: "./images/Jumanji_thumbnail.png",
-    video: "./videos/Jumanji.mp4",
-    duration: "1hr 30 min",
-    desc: `When Spencer goes missing, Martha, Bethany and Fridge realize they must go back into jumanji to find him- but something goes wrong.`,
-  },
-  {
-    id: 15,
-    title: "Jumanji",
-    rating: "PG",
-    category: "adventure",
-    img_title: "./images/Jumanji_title.png",
-    thumbnails: "./images/Jumanji_thumbnail.png",
-    video: "./videos/Jumanji.mp4",
-    duration: "1hr 30 min",
-    desc: `When Spencer goes missing, Martha, Bethany and Fridge realize they must go back into jumanji to find him- but something goes wrong.`,
-  },
-  
-  {
-    id: 20,
-    title: "Jumanji",
-    rating: "PG",
-    category: "thriller",
-    img_title: "./images/Jumanji_title.png",
-    thumbnails: "./images/Jumanji_thumbnail.png",
-    video: "./videos/Jumanji.mp4",
-    duration: "1hr 30 min",
-    desc: `When Spencer goes missing, Martha, Bethany and Fridge realize they must go back into jumanji to find him- but something goes wrong.`,
-  },
-  {
-    id: 21,
-    title: "Jumanji",
-    rating: "PG",
-    category: "thriller",
-    img_title: "./images/Jumanji_title.png",
-    thumbnails: "./images/Jumanji_thumbnail.png",
-    video: "./videos/Jumanji.mp4",
-    duration: "1hr 30 min",
-    desc: `When Spencer goes missing, Martha, Bethany and Fridge realize they must go back into jumanji to find him- but something goes wrong.`,
-  },
-  {
-    id: 22,
-    title: "Jumanji",
-    rating: "PG",
-    category: "thriller",
-    img_title: "./images/Jumanji_title.png",
-    thumbnails: "./images/Jumanji_thumbnail.png",
-    video: "./videos/Jumanji.mp4",
-    duration: "1hr 30 min",
-    desc: `When Spencer goes missing, Martha, Bethany and Fridge realize they must go back into jumanji to find him- but something goes wrong.`,
-  },
-
-
+  }
 ]
 
 const browseBtn = document.querySelector(".nav-browse");
@@ -204,7 +68,7 @@ window.addEventListener("load", function () {
   billboard_video.innerHTML = `<source src=${movies[random].video} type="video/mp4"/>`;
   popup_video.innerHTML = `<source src=${movies[random].video} type="video/mp4"/>`;
   runtask();
-  
+
   const groupedMovies = groupBy(movies, 'category');
   displayMovies(groupedMovies);
   showHoverMovie();
@@ -284,6 +148,7 @@ function runtask(){
   
   // listen to more info button
   more_info_btn.addEventListener("click", function(){
+    console.log("hello");
     info_overlay.classList.remove("hide-tool");
     more_info.classList.remove("hide-tool");
     billboard_video.pause();
